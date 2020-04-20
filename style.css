@@ -1,0 +1,37 @@
+body{ 
+  margin: 0;
+}
+
+.nav{
+  display: flex;
+  height: 40px;
+  background: lightblue;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__link{
+  margin-right: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav__link:hover{
+  color: grey;
+}
+
+.main__title{
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .main__title{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__title{
+    font-size: 30px;
+  }
+}
