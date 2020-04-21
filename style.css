@@ -1,6 +1,7 @@
 body{ 
   margin: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .header{
@@ -9,7 +10,6 @@ body{
   align-items: center;
   height: 40px;
   background: lightblue;
-  position: relative;
 }
 
 .nav{
@@ -90,16 +90,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-top: 100px;
-    left: 555px;
-    top: 0;
+    width: 20%;
+    top: -999px;
     height: 100vh;
-    transition: 1s;
+    transition: .5s;
     background: lightblue;
   }
 
   .active + .nav{
-    left: 80%;
+    top: 0;
     }
 
   .active + .nav .nav__link{
@@ -108,6 +107,7 @@ body{
   } 
 
   .nav__link{
+    margin-right: 0;
     transition: 1s;
   }
 }
